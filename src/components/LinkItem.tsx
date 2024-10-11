@@ -8,7 +8,11 @@ interface LinkProps {
 export default function LinkItem({ to, children }: LinkProps) {
   return (
     <li className="flex h-9 w-9 items-center justify-center rounded-full">
-      <a href={to} target="_blank">
+      <a
+        href={to}
+        target="_blank"
+        className="transition-all duration-300 hover:scale-125"
+      >
         {children}
       </a>
     </li>
