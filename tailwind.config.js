@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         'color-change': 'colorChange 10s linear infinite',
+        'ripple': 'ripple 0.6s ease-out forwards',
       },
       keyframes: {
         colorChange: {
@@ -23,6 +24,10 @@ export default {
           '81%': { backgroundColor: '#0F1E2E' },
           '90%': { backgroundColor: '#101829' },
           '100%': { backgroundColor: '#0B1222' },
+        },
+        'ripple': {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '100%': { transform: 'scale(10)', opacity: '0' },
         },
       },
     },
