@@ -1,3 +1,5 @@
 export default function Name() {
-  return <div className="text-3xl font-semibold">Hoàng Anh Tuấn</div>;
+  return (
+    <div className="select-none text-3xl font-semibold">Hoàng Anh Tuấn</div>
+  );
 }
