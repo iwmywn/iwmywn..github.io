@@ -4,7 +4,7 @@ export default function RandomQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
-    <div className="mx-6 flex flex-col items-center gap-y-2 sm:mx-12 md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-44">
+    <div className="flex w-[90vw] flex-col items-center gap-y-2 sm:w-[75vw]">
       <q className="text-center">
         <i>{randomQuote.text}</i>
       </q>
