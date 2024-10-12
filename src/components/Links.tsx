@@ -4,7 +4,7 @@ import LinkItem from "./LinkItem";
 
 export default function Links() {
   return (
-    <ul className="flex gap-5">
+    <ul className="flex flex-nowrap gap-x-5">
       <LinkItem to="https://github.com/iwmywn">
         <FaGithub fontSize={25} />
       </LinkItem>
