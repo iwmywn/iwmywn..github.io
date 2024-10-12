@@ -9,8 +9,8 @@ interface Ripple {
 export default function useRippleEffect() {
   const [ripples, setRipples] = useState<Ripple[]>([]);
 
-  const handleInteraction = useCallback((e: MouseEvent | TouchEvent) => {
-    const { clientX, clientY } = "touches" in e ? e.touches[0] : e;
+  const handleInteraction = useCallback((e: MouseEvent) => {
+    const { clientX, clientY } = e;
     const newRipple = {
       x: clientX,
       y: clientY,
@@ -24,14 +24,11 @@ export default function useRippleEffect() {
   }, []);
 
   useEffect(() => {
-    const handleTouchStart = (e: TouchEvent) => handleInteraction(e);
     const handleClick = (e: MouseEvent) => handleInteraction(e);
 
-    window.addEventListener("touchstart", handleTouchStart);
     window.addEventListener("click", handleClick);
 
     return () => {
-      window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("click", handleClick);
     };
   }, [handleInteraction]);
