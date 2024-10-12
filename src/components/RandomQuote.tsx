@@ -8,7 +8,9 @@ export default function RandomQuote() {
       <q className="text-center">
         <i>{randomQuote.text}</i>
       </q>
-      <span className="text-sm text-slate-300">{randomQuote.source}</span>
+      <span className="whitespace-nowrap text-sm text-slate-300">
+        {randomQuote.source}
+      </span>
     </div>
   );
 }
