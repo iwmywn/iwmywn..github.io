@@ -11,6 +11,7 @@ export default function LinkItem({ to, children }: LinkProps) {
       <a
         href={to}
         target="_blank"
+        rel="noopener"
         className="transition-all duration-300 hover:scale-125"
       >
         {children}
