@@ -3,10 +3,10 @@ import Info from "./components/Info";
 import RandomQuote from "./components/RandomQuote";
 import RippleEffect from "./components/RippleEffect";
 import useRippleEffect from "./hooks/useRippleEffect";
-import React from "react";
+import { memo } from "react";
 
-const MemoizedInfo = React.memo(Info);
-const MemoizedRandomQuote = React.memo(RandomQuote);
+const MemoizedInfo = memo(Info);
+const MemoizedRandomQuote = memo(RandomQuote);
 
 export default function App() {
   const ripples = useRippleEffect();
