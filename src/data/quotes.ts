@@ -3814,7 +3814,7 @@ export default [
     source: "Maya Angelou",
   },
   {
-    text: "You current situation is giving you an opportunity to re-evaluate what you want.",
+    text: "Your current situation is giving you an opportunity to re-evaluate what you want.",
     source: "Tashabee",
   },
   {
