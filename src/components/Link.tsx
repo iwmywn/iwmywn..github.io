@@ -6,7 +6,7 @@ interface LinkProps {
   children: ReactNode;
 }
 
-export default function LinkItem({ to, label, children }: LinkProps) {
+export default function Link({ to, label, children }: LinkProps) {
   return (
     <li className="flex h-9 w-9 items-center justify-center">
       <a
