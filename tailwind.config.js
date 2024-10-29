@@ -27,7 +27,7 @@ export default {
         },
         'ripple': {
           '0%': { transform: 'scale(1)', opacity: '1' },
-          '100%': { transform: 'scale(5)', opacity: '0' },
+          '100%': { transform: 'scale(4)', opacity: '0' },
         },
       },
     },
