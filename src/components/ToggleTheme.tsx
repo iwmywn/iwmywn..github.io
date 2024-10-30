@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import toggleDark from "../features/theme/toggleDark";
 
 export default function ToggleTheme() {
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark" || savedTheme === null;
-  });
+  const [isDark, setIsDark] = useState<boolean>(() =>
+    document.documentElement.classList.contains("dark"),
+  );
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
