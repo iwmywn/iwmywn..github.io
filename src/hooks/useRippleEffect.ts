@@ -25,7 +25,7 @@ export default function useRippleEffect() {
 
   useEffect(() => {
     window.addEventListener("click", handleClick);
-    
+
     return () => window.removeEventListener("click", handleClick);
   }, [handleClick]);
 
