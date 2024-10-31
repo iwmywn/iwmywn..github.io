@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       animation: {
         'color-change-dark': 'colorChangeDark 10s linear infinite',
         'color-change-light': 'colorChangeLight 10s linear infinite',
