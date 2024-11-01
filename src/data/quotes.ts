@@ -4029,4 +4029,4 @@ export default [
     text: "Be thankful for all things in life. Even for the bad things. Sometimes the worst situations in life turn out to be the best things that ever happened to us.",
     source: "John Milson",
   },
-];
+] as const;
