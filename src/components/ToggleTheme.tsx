@@ -18,7 +18,7 @@ export default function ToggleTheme() {
     };
 
     window.addEventListener("dblclick", handleToggleDark);
-
+    // using document.body will wait for animation to finish
     return () => {
       window.removeEventListener("dblclick", handleToggleDark);
     };

@@ -27,7 +27,7 @@ export default function useRippleEffect() {
     window.addEventListener("click", handleClick);
 
     return () => window.removeEventListener("click", handleClick);
-  }, [handleClick]);
+  }, []);
 
   return ripples;
 }
