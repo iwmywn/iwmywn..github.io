@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 /**
  * Credit to [@hooray](https://github.com/hooray)
  * @see https://github.com/vuejs/vitepress/pull/2347
@@ -6,7 +8,7 @@
 interface ToggleDarkProps {
   event: MouseEvent;
   isDark: boolean;
-  setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsDark: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function toggleDark({

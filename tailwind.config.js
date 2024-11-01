@@ -43,7 +43,7 @@ export default {
           '90%': { backgroundColor: '#F2F5FC' },
           '100%': { backgroundColor: '#F3F6FD' },
         },
-        'ripple': {
+        ripple: {
           '0%': { transform: 'scale(1)', opacity: '1' },
           '100%': { transform: 'scale(4)', opacity: '0' },
         },
