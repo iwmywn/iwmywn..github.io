@@ -32,9 +32,8 @@ export default function toggleDark({
     Math.max(y, window.innerHeight - y),
   );
 
-  const transition = document.startViewTransition(async () => {
+  const transition = document.startViewTransition(() => {
     setIsDark(!isDark);
-    await new Promise((resolve) => setTimeout(resolve, 0));
   });
 
   transition.ready.then(() => {
