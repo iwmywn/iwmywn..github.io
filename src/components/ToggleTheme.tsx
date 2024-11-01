@@ -17,10 +17,10 @@ export default function ToggleTheme() {
       toggleDark({ event, isDark, setIsDark });
     };
 
-    document.body.addEventListener("dblclick", handleToggleDark);
+    window.addEventListener("dblclick", handleToggleDark);
 
     return () => {
-      document.body.removeEventListener("dblclick", handleToggleDark);
+      window.removeEventListener("dblclick", handleToggleDark);
     };
   }, [isDark]);
 
