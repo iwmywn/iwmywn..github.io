@@ -2,21 +2,21 @@ export default [
   {
     href: "https://github.com/iwmywn",
     label: "Visit GitHub profile",
-    icon: "FaGithub",
+    iconName: "FaGithub",
   },
   {
     href: "https://www.facebook.com/iwmy.wn",
     label: "Visit Facebook profile",
-    icon: "FaFacebook",
+    iconName: "FaFacebook",
   },
   {
     href: "https://www.instagram.com/iwmy_wn",
     label: "Visit Instagram profile",
-    icon: "FaInstagram",
+    iconName: "FaInstagram",
   },
   {
     href: "mailto:itsmethu2408@gmail.com",
     label: "Send an email",
-    icon: "IoMdMail",
+    iconName: "IoMdMail",
   },
 ] as const;

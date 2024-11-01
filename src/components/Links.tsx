@@ -13,9 +13,9 @@ const iconMap = {
 export default function Links() {
   return (
     <ul className="flex flex-nowrap gap-x-5">
-      {socialLinks.map(({ href, label, icon }, index) => (
+      {socialLinks.map(({ href, label, iconName }, index) => (
         <Link key={index} to={href} label={label}>
-          {iconMap[icon]}
+          {iconMap[iconName]}
         </Link>
       ))}
     </ul>
