@@ -8,11 +8,8 @@ export default function ToggleTheme() {
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
-
     localStorage.setItem("theme", isDark ? "dark" : "light");
-  }, [isDark]);
 
-  useEffect(() => {
     const handleToggleDark = (event: MouseEvent) => {
       toggleDark({ event, isDark, setIsDark });
     };
