@@ -8,7 +8,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/public/fonts/Montserrat-Regular.ttf) format("truetype");
+    src: url(/fonts/Montserrat-Regular.ttf) format("truetype");
   }
 
   @font-face {
@@ -16,7 +16,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(/public/fonts/Montserrat-Medium.ttf) format("truetype");
+    src: url(/fonts/Montserrat-Medium.ttf) format("truetype");
   }
 
   @font-face {
@@ -24,7 +24,7 @@
     font-style: italic;
     font-weight: 500;
     font-display: swap;
-    src: url(/public/fonts/Montserrat-MediumItalic.ttf) format("truetype");
+    src: url(/fonts/Montserrat-MediumItalic.ttf) format("truetype");
   }
 
   @font-face {
@@ -32,6 +32,6 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(/public/fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(/fonts/Montserrat-Bold.ttf) format("truetype");
   }
 }
