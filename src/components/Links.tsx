@@ -15,11 +15,11 @@ export default function Links() {
       {socialLinks.map(({ href, label, iconName }, index) => (
         <li key={index} className="flex h-9 w-9 items-center justify-center">
           <a
+            className="text-[1.625rem] transition-all duration-300 hover:scale-125"
             href={href}
             target="_blank"
             rel="noopener"
             aria-label={label}
-            className="text-[1.625rem] transition-all duration-300 hover:scale-125"
           >
             {iconMap[iconName]}
           </a>
