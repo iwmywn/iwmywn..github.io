@@ -1,22 +1,25 @@
+import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 export default [
   {
     href: "https://github.com/iwmywn",
     label: "Visit GitHub profile",
-    iconName: "FaGithub",
+    icon: FaGithub,
   },
   {
     href: "https://www.facebook.com/iwmy.wn",
     label: "Visit Facebook profile",
-    iconName: "FaFacebook",
+    icon: FaFacebook,
   },
   {
     href: "https://www.instagram.com/iwmy_wn",
     label: "Visit Instagram profile",
-    iconName: "FaInstagram",
+    icon: FaInstagram,
   },
   {
     href: "mailto:itsmethu2408@gmail.com",
     label: "Send an email",
-    iconName: "IoMdMail",
+    icon: IoMdMail,
   },
 ] as const;
