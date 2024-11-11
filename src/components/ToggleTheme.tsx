@@ -6,13 +6,13 @@ export default function ToggleTheme() {
     document.documentElement.classList.contains("dark"),
   );
 
-  const handleToggleDark = (event: MouseEvent) => {
-    toggleDark({ event, isDark, setIsDark });
-  };
-
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark);
     localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    const handleToggleDark = (event: MouseEvent) => {
+      toggleDark({ event, isDark, setIsDark });
+    };
 
     window.addEventListener("dblclick", handleToggleDark);
     // using document.body will wait for animation to finish
