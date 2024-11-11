@@ -2,14 +2,13 @@
   "homepage": "https://iwmywn.github.io",
   "name": "iwmywn",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "pnpm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "prettier-check": "prettier --check ./src",
     "prettier-fix": "prettier --write ./src"
