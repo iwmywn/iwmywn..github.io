@@ -1,11 +1,6 @@
 import useRippleEffect from "../hooks/useRippleEffect";
 
-interface RippleEffectProps {
-  x: number;
-  y: number;
-}
-
-function RippleEffect({ x, y }: RippleEffectProps) {
+function RippleEffect({ x, y }: { x: number; y: number }) {
   return (
     <span
       className="ripple pointer-events-none absolute h-4 w-4 animate-ripple bg-[url('/favicon.svg')] bg-contain bg-center bg-no-repeat"
