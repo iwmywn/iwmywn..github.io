@@ -1,8 +1,8 @@
 import "./index.css";
 import Info from "./components/Info";
 import RandomQuote from "./components/RandomQuote";
-import RippleManager from "./components/RippleManager";
 import ToggleTheme from "./components/ToggleTheme";
+import RippleEffect from "./components/RippleEffect";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <RandomQuote />
       </main>
       <ToggleTheme />
-      <RippleManager />
+      <RippleEffect />
     </>
   );
 }
