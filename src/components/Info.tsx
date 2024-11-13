@@ -8,8 +8,7 @@ export default function Info() {
       </span>
 
       <ul className="flex flex-nowrap gap-x-5">
-        {socialLinks.map(({ href, label, icon }, index) => {
-          const LinkIcon = icon;
+        {socialLinks.map(({ href, label, icon: Icon }, index) => {
           return (
             <li
               key={index}
@@ -22,7 +21,7 @@ export default function Info() {
                 rel="noopener"
                 aria-label={label}
               >
-                <LinkIcon />
+                <Icon />
               </a>
             </li>
           );

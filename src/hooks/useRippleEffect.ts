@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 interface Ripple {
+  id: number;
   x: number;
   y: number;
-  id: number;
 }
 
 export default function useRippleEffect() {
@@ -13,9 +13,9 @@ export default function useRippleEffect() {
     const handleClick = (e: MouseEvent) => {
       const { clientX, clientY } = e;
       const newRipple = {
+        id: Date.now(),
         x: clientX,
         y: clientY,
-        id: Date.now(),
       };
       setRipples((prev) => [...prev, newRipple]);
 
