@@ -8,9 +8,7 @@ export default function RandomQuote() {
       <q>
         <i>{randomQuote.text}</i>
       </q>
-      <span className="text-sm text-black/75 dark:text-white/75">
-        {randomQuote.source}
-      </span>
+      <span className="text-sm opacity-75">{randomQuote.source}</span>
     </div>
   );
 }
