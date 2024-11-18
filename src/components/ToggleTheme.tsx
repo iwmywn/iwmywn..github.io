@@ -14,11 +14,10 @@ export default function ToggleTheme() {
       toggleDark({ event, isDark, setIsDark });
     };
 
-    window.addEventListener("dblclick", handleToggleDark);
-    // using document.body will wait for animation to finish
-    return () => {
-      window.removeEventListener("dblclick", handleToggleDark);
-    };
+    document.body.addEventListener("dblclick", handleToggleDark);
+
+    return () =>
+      document.body.removeEventListener("dblclick", handleToggleDark);
   }, [isDark]);
 
   return null;
