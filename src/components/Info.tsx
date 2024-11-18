@@ -2,7 +2,7 @@ import socialLinks from "../data/socialLinks";
 
 export default function Info() {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-4">
+    <>
       <span className="select-none whitespace-nowrap text-3xl font-bold">
         Hoàng Anh Tuấn
       </span>
@@ -27,6 +27,6 @@ export default function Info() {
           );
         })}
       </ul>
-    </div>
+    </>
   );
 }
